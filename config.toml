@@ -3,7 +3,7 @@ baseURL = "https://blog.johanet.fr/"
 
 theme = "cocoa-eh"
 publishdir = "/var/www/blog/"
-
+googleAnalytics = "UA-120017079-1"
 builddrafts = true
 canonifyurls = true
 contentdir = "content"
@@ -14,7 +14,7 @@ title = "Bits about software"
 pluralizelisttitles = false
 
 [permalinks]
-blog = "blog/:slug/"
+blog = ":slug/"
 
 [params]
 dateform = "Jan 2, 2006"
@@ -33,4 +33,3 @@ linkedin = "louis-johanet"
 posts_navigation = true
 small_banner_logo = false
 latestpostcount = 5
-
