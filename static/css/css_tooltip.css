@@ -1,0 +1,90 @@
+/* Shadow with inverted Y-axis for realism */
+.oja-btn-hover .oja-container {
+    display: none;
+}
+.oja-btn-hover h3 {
+    text-decoration: underline;
+}
+.oja-btn-hover:hover .oja-container {
+    display: block;
+    background-color: transparent;
+   /* Offset with the hovered button */
+    position: relative;
+}
+.oja-btn-hover:hover .oja-container .oja-dropdown {
+   /* z-index needs to be lower than the dropdown-hidden's */
+    z-index: 2;
+    display: block;
+    box-shadow: -2px -2px 5px 1px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+}
+.oja-btn-hover:hover .oja-container .oja-dropdown:after {
+    background-color: white;
+    content: "";
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -13px;
+   /* Trickier to position*/
+    left: 15px;
+   /* Wherever you want along the X-axis */
+}
+.oja-btn-hover:hover .oja-container .oja-dropdown-hidden {
+    background-color: white;
+    width: 60px;
+   /* Wide enough to hide the arrow */
+   /* z-index needs to be higher than the dropdown's */
+    z-index: 3;
+    height: 20px;
+   /* Tall enough to hide the arrow without hiding any other content */
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+}
+.oja-show-container {
+    height:200px;
+}
+/* Shadow with inverted Y-axis for realism */
+.oja-ex-container {
+    display: block;
+    background-color: transparent;
+    position: relative;
+    top: 20px;
+}
+.oja-ex-container .oja-ex-tooltip {
+    z-index: 2;
+    display: block;
+    box-shadow: -2px -2px 5px 1px rgba(0, 0, 0, 0.1);
+    background-color: green;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+}
+.oja-ex-container .oja-ex-tooltip:after {
+    background-color: red;
+    content: "";
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+    box-shadow: -2px 2px 5px 1px rgba(0, 0, 0, 0.1);
+    transform: rotate(45deg);
+    position: absolute;
+    top: -13px;
+    left: 15px;
+}
+.oja-ex-container .oja-ex-hidden {
+    background-color: blue;
+    width: 60px;
+   /* Wide enough to hide the arrow */
+    z-index: 3;
+    height: 20px;
+    position: absolute;
+    border-radius: 5px;
+    top: 0px;
+}

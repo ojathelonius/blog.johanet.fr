@@ -2,6 +2,7 @@
 title: "Single Sign-On with Alfresco Share and Keycloak"
 date: 2018-05-28T23:10:33+02:00
 draft: false
+description: "Single Sign-On with Alfresco Share and Keycloak"
 ---
 I've been looking for a solution to provide Single Sign-On for Alfresco using Keycloak for some time. I found a few, however none including both recent versions of **Alfresco Community Edition** and Keycloak. Indeed, **Alfresco Content Services** includes a CAS feature but its free counterpart does not.
 
