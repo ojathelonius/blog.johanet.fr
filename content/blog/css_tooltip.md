@@ -28,7 +28,7 @@ Do you want to show a tooltip on hover with an **arrow pointing** at the hovered
 
 # Where the magic lies
 ## It's a lie
-The trick is to display a shadowed tooltip as well as a square with its own shadow. We will then hide half of the square with another white element, making it look like an arrow.
+The trick is to display a shadowed tooltip as well as a square with its own shadow. We will then hide half of the square with another white element, thus hiding the shadow casted by the "arrow".
 
 
 <div class="oja-ex-container">
@@ -40,27 +40,28 @@ The trick is to display a shadowed tooltip as well as a square with its own shad
 
 <br>
 ## Why is this even necessary ?
-Well, if you want the tooltip to cast a shadow all around, you need to apply the `box-shadow` property to both the arrow and the tooltip. Whether one is in front of the other, it'll cast an unwanted shadow on its neighbor.
+Well, if you want the tooltip to cast a shadow all around, you need to apply the `box-shadow` property to both the arrow and the tooltip. This will cast a shadow on the tooltip itself, and you want to hide that. 
+The only other solution I found was a fake shadow using a grey `border` which did not really fit me.
 
-## Implementation
+## Implementation example
+
+Here's a way to build such a tooltip. It might not be the best way however it worked properly for me.
 
 ### HTML
 
 ```html
-<div class="oja-show-container">
-    <div class="oja-btn-hover">
-    <button>
+<div class="btn-hover">
+  <button>
     Hover me
-    </button>
-    <div class="oja-container">
-        <div class="oja-dropdown">
-        <p>
-            This is a pretty tooltip.
-        </p>
-        </div>
-        <span class="oja-dropdown-hidden"></span>
+  </button>
+  <div class="container">
+    <div class="dropdown">
+    <p>
+        This is a pretty tooltip.
+    </p>
     </div>
-    </div>
+    <span class="dropdown-hidden"></span>
+  </div>
 </div>
 ```
 
