@@ -17,12 +17,12 @@ pluralizelisttitles = false
 blog = ":slug/"
 
 [params]
+logofile = "img/logo.png"
+faviconfile = "img/logo.png"
 dateform = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description = "Bits about software"
 copyright = "Copyright © 2018 Louis Johanet"
-logofile = "img/logo.png"
-faviconfile = "img/logo.png"
 highlightjs = true
 progressively = true
 align_left = false
