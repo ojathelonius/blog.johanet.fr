@@ -5,18 +5,18 @@ draft: false
 description: "My experience as a SIA AppChallenge finalist"
 ---
 
-I recently was a finalist in the Singapore Airlines AppChallenge 2018 ; this is a short rundown of this amazing experience.
+I had the chance to be a finalist in the Singapore Airlines AppChallenge 2018 ; this is a short rundown of this amazing experience.
 
 # The challenge
 
-Singapore Airlines, Singapore's flag carrier airline, is looking for developers, start-up founders and students to brainstorm over  the several problem statements and come up with a prototype, as a part of the **Singapore Airlines AppChallenge**.
+Singapore Airlines, Singapore's flag carrier airline, is looking for developers, start-up founders and students to brainstorm over several problem statements and come up with a prototype, as a part of the **Singapore Airlines AppChallenge**.
 
 
 
 ## 2018 edition
 
 ### Some numbers
-The SIA AppChallenge started in 2015 and has been growing since then.
+The SIA AppChallenge started in 2015 and has only been growing since then.
 
 In 2018, the challenge gathered **1527 participants**, **784 teams** in **73 different countries**.
 
@@ -57,7 +57,7 @@ Five problem statements were proposed to the participants :
 ### Features
 "Let it fly" falls right into the **Offloaded Passenger Compensation Process** category.
 
-The app aims at increasing the numbers of volunteers by providing them a way to swiftly take action, should they be offloaded. For this, it holds several features :
+The app aims at increasing the numbers of volunteers by providing them a way to swiftly take action, should they be offloaded. For this, it offers several features :
 
 * Lists all the **perks of volunteering a seat**, such as free activities, hotels or restaurants
 * Allows passengers to **volunteer** when an overbooking situation arises
@@ -81,7 +81,7 @@ The code is available [on GitHub](https://github.com/ojathelonius/let-it-fly-ui)
 
 Singapore Airlines did provide a dummy REST API, however there wasn't much data available. Moreover, we could not get access to essential third-party APIs to populate our app, such as AirBnB's or Booking.com's, and had to use additional dummy JSON data.
 
-**NodeJS** allows creating a webserver in seconds, although using a boilerplate can make things even easier as it includes several utilities for parsing, dealing with security or querying external APIs.
+**NodeJS** and **ExpressJS** allows creating a webserver in seconds, although using a boilerplate can make things even easier as it includes several utilities for parsing, dealing with security or querying external APIs.
 
 The code is available [on GitHub](https://github.com/ojathelonius/let-it-fly-back-end).
 
@@ -119,7 +119,7 @@ A demo video was created, and was voiced over live during the pitch.
 
 # Grand Finale
 
-After making it to the final phase, our team was assigned with a mentor with whom we were able to discuss about the project on Skype.
+After making it to the final phase, our team was assigned with a mentor with whom we were able to talk about the project on Skype.
 
 Our team was flown out to Singapore on October 25th for the grand finale, and we were to stay there for the entire week-end.
 
@@ -151,28 +151,28 @@ We felt that the winning ideas were quite interesting and definitely deserved to
 * Technical Competency (30%), e.g. *How technically feasible is the solution, in view of current leading-edge technologies?*
 * User Experience (10%)
 
-Indeed, one of the core principles that we kept in mind while designing "Let it fly" was **feasability**. With this in mind, our solution had a short time to market and could easily reach production in months. Due do this, "Let it fly" may not have been as audacious as some of the winning ideas.
+Indeed, one of the core principles that we kept in mind while designing "Let it fly" was **feasability**. Our solution had a short time to market and could easily reach production in months. Due do this, "Let it fly" may not have been as audacious as some of the winning ideas.
 
 
 #### Software/hardware
 
-Moreover, our project was software-only. Many projects that ended up at the top involved both hardware and software, and some even had a physical prototype ; that may have been a disadvantage.
+Our project was software-only. Many projects that ended up at the top involved both hardware and software, and some even had a physical prototype ; this may have been a disadvantage.
 
 #### Live performance
 Oral presence and presentation quality were absolutely key during this event. Some teams had really good speakers, which would make the pitch much more lively. 
 
 ![Live demo](https://i.imgur.com/Bpqe6FF.jpg)
 
-Live demos definitely sounded like a bad idea as it usually failed, and pre-recorded demo videos had to be used instead.
+Some teams attempted a live demo, but it usually did not work well due to the unpredictable conditions (spotty Wi-Fi, Murphy's law...). Pre-recorded demo videos sometimes had to be used instead.
 
-Answering jury questions was no easy task, as these were quite relevant and were really framing each project.
+Answering jury questions was no easy task, as these were quite relevant and were really trying to frame each project.
 
 Overall, all teams did a great job at presenting and respected the strict 13 minutes maximum time for the presentation.
 
 
 ![Group photo](https://i.imgur.com/y1YMiYF.jpg)
 
-We had a blast during this event, that was quite well organized by SIA employees and Agorize, and will definitely be entering the challenge again next year !
+We had a blast during this event, that was quite well organized by SIA employees and Agorize. We will definitely be entering the challenge again next year !
 
 
 
