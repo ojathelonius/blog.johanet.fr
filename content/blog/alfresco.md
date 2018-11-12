@@ -2,13 +2,15 @@
 title: "Single Sign-On with Alfresco Share and Keycloak"
 date: 2018-05-28T23:10:33+02:00
 draft: false
-description: "Single Sign-On with Alfresco Share and Keycloak"
+description: "Single Sign-On with Alfresco Share and Keycloak, using CAS"
 ---
-I've been looking for a solution to provide Single Sign-On for Alfresco using Keycloak for some time. I found a few, however none including both recent versions of **Alfresco Community Edition** and Keycloak. Indeed, **Alfresco Content Services** includes a CAS feature but its free counterpart does not.
+I've been looking for a solution to provide Single Sign-On for Alfresco using Keycloak for some time. I found a few, however none including both recent versions of **Alfresco Community Edition** and Keycloak. **Alfresco Content Services** provides a SAML AMP module which should work out of the box with Keycloak.
 
 As a reminder, [Alfresco Community Edition](https://www.alfresco.com/fr/alfresco-community-editions) is an open-source **content management system** while [Keycloak](https://www.keycloak.org/) is a powerful, **open-source identity and access management software** developed by RedHat.
 
 I finally got these two to work together using the `keycloak-protocol-cas` plugin and thought I would share the solution, which required modifying the `mod_auth_cas` Apache module which would not validate CAS service tickets otherwise.
+
+*In hindsight, it might be more convenient to use a dedicated AMP module such as [this one](https://github.com/cggh/cggh-alfresco-extensions/tree/master/cas-share-amp) or (this similar one)[https://github.com/wrighting/alfresco-cas/tree/master/alfresco-cas-share-amp] , as it does not require tampering with mod_auth_cas. They both use the [Java CAS client](https://github.com/apereo/java-cas-client) instead of mod_auth_cas.*
 
 This method has been tested with **Keycloak 4.0.0** and **Alfresco Community Edition 5.2**.
 
@@ -214,6 +216,10 @@ Then you need to add a `ServerName` to your Apache config :
 ```apache
 ServerName your-proxy-url
 ```
+
+# Single Log Out
+
+Single Log Out (SLO) is experimental with mod_auth_cas and didn't seem to work on my side.
 
 
 
